@@ -1,0 +1,746 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+@mixin fontsize($size: 24, $base: 10) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+$gray : #f9f8f6;
+
+
+
+//headerin
+
+.pc_menu_li{
+    list-style:none;
+}
+
+.menubar{
+    display:inline-block;
+    padding-left: 15px;
+}
+
+//スマホ設定
+@media (max-width: 550px){
+    .pc_menu{
+        display: none;
+    }
+}
+
+@media (max-width: 550px){
+    .logo{
+        text-align: center;
+    }
+    
+}
+
+.sp_menu_li{
+    list-style:none;
+    text-align: center;
+}
+
+//pcの時スマホ非表示
+@media (min-width: 550px){
+    .sp_menu{
+        display: none;
+    }
+}
+
+
+
+//newitems
+
+#pc_new_items{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 550px){
+  #pc_new_items{
+      display:none;
+  }
+}
+
+#sp_new_items{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 550px){
+    #sp_new_items{
+        display:none;
+    }
+}
+
+.items_pic1{
+    width:32%;
+    display:inline-block;
+}
+
+.items_pic2{
+    width:32%;
+    display:inline-block;
+}
+
+@media (max-width: 550px){
+    .items_pic1{
+        width:45%;
+        display:inline-block;
+        padding: 10px;
+    }
+    .items_pic2{
+        width:45%;
+        display:inline-block;
+        padding: 10px;
+    }
+}
+
+
+//popilaritems
+
+#pc_popular_items{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 550px){
+  #pc_popular_items{
+      display:none;
+  }
+}
+
+#sp_popular_items{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 550px){
+    #sp_popular_items{
+        display:none;
+    }
+}
+
+
+.popular_pic1{
+    width:32%;
+    display:inline-block;
+}
+
+.popular_pic2{
+    width:32%;
+    display:inline-block;
+}
+
+@media (max-width: 550px){
+    .popular_pic1{
+        width:45%;
+        display:inline-block;
+        padding: 10px;
+    }
+    .popular_pic2{
+        width:45%;
+        display:inline-block;
+        padding: 10px;
+    }
+}
+
+
+
+ p{
+        @include fontsize(13);
+      }
+
+
+
+//guide
+      
+#pc_shopping_guide{
+      padding-top: 20px;
+  }      
+      
+@media (max-width: 550px){
+  #pc_shopping_guide{
+      display:none;
+  }
+}
+
+#sp_shopping_guide{
+    text-align:center;
+    padding-top: 20px;
+}
+
+@media (min-width: 550px){
+    #sp_shopping_guide{
+        display:none;
+    }
+}
+
+      
+      
+.li_square{
+    list-style: square;
+    color:#887f69;
+}      
+      
+.guidetitle{
+    @include fontsize(24);
+    color:#887f69;
+}      
+      
+      
+.sent{
+    width: 35%;
+    display: inline-block;
+    margin: 40px;
+}      
+
+.pay{
+    width: 35%;
+    display: inline-block;
+    margin: 40px;
+}   
+      
+@media (max-width: 550px){
+    .sent{
+        display:block;
+        width: 100%;
+    }
+     .pay{
+         display:block;
+         width: 100%;
+     } 
+}      
+      
+//side_bar      
+      
+#search #searchInput{
+    background-image: url(../images/top/search_icon.png);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: $gray;
+}      
+
+//ページリンク
+      
+#pagelink{
+    background-color:#887f69;
+    height: 45px;
+}
+      
+.linkpic{
+    display:inline-block;
+    padding: 10px;
+}      
+      
+.nextpic{
+    text-align: center;
+    display:inline-block;
+    float:right;
+    padding: 10px;
+}      
+      
+
+//カテゴリー
+
+#categories{
+    margin: 10 0 10 0px;
+}
+
+#catego{
+    margin-top: 10px;
+    background-color:#887f69;
+    height: 45px;
+    margin: 10 0 0 0;
+}
+      
+.catego_li{
+
+}
+      
+.categoriespic{
+    display:inline-block;
+    padding: 10px;
+}      
+      
+.nextpic{
+    text-align: center;
+    display:inline-block;
+    float:right;
+    padding: 10px;
+}            
+      
+.catebox{
+    list-style:none;
+    height: 20px;
+    right:2%;
+    @include fontsize(15);
+    border: 1px solid #eee;
+    margin: 0px;
+    padding: 10px;
+}      
+      
+.nextgray{
+    text-align: center;
+    display:inline-block;
+    float:right;
+
+}      
+      
+//about
+
+#about{
+  margin-top: 10px;
+}
+
+#about_bar {
+  background-color:#887f69;
+  height: 45px;
+}      
+      
+.aboutmenu{
+    display:inline-block;
+    padding: 10px;
+}      
+      
+.aboutpic{
+    text-align: center;
+    padding: 10px;
+}      
+
+ .aboutp{
+        @include fontsize(13);
+        margin: 10px;
+      }
+      
+.more{
+        text-align: center;
+}      
+      
+@media (max-width: 550px){
+    
+    .aboutpic{
+        float:left;
+    }
+}      
+      
+      
+//shopinfo   
+      
+#shopinfo{
+     margin-top: 10px;
+}
+
+#shopinfo_bar {
+  background-color:#887f69;
+  height: 45px;
+}      
+      
+.shopinfomenu{
+    display:inline-block;
+    padding: 10px;
+}      
+      
+.shoppic{
+    text-align: center;
+    padding: 10px;
+}            
+
+.shopp{
+        @include fontsize(13);
+        margin: 10px;
+      }
+
+@media (max-width: 550px){
+
+    .shoppic{
+        float:left;
+    }
+}   
+
+      
+      
+//footer
+
+@media (min-width: 550px){
+#pagetop{
+    display: block;
+    text-align:right;
+}
+}
+
+@media (max-width: 550px){
+    #pagetop{
+        display: block;
+        text-align: center;
+    }
+}
+
+
+.footborder{
+    border: solid;
+    border-width: 1px;
+    color:#808080;
+    margin: 10px;
+}
+
+.navi{
+    text-align: center;
+}
+
+.copy{
+    text-align: center;
+}
+
+
+
+// list page
+
+#top_bar{
+  background-color: #b0b0b0;
+  padding: 10px;
+}
+.homeicon{
+     display: inline-block;
+}
+.top_bar_p{
+    color:#808080;
+    display: inline;
+}
+
+#top_bar_pic{
+    padding: 5px;
+}
+
+//itemlistpic
+
+.items_pic3{
+    width:32%;
+    display:inline-block;
+}
+
+@media (max-width: 550px){
+    .items_pic3{
+        width:45%;
+        display:inline-block;
+        padding: 10px;
+    }
+}
+
+
+//nextback_bar
+
+#nb_bar{
+    padding-top: 20px;
+}
+
+#next_bar{
+    background-color: #887f69;
+    width: 15%;
+    display:inline-block;
+    padding: 10px;
+}
+
+.next_bar_p{
+    color: #ffffff;
+    text-align: center;
+    margin: 0px;
+}
+
+#cback_bar{
+    background-color: #887f69;
+    width: 15%;
+    display:inline-block;
+    padding: 10px;
+    float: right;
+}
+
+.back_bar_p{
+    color: #ffffff;
+    text-align: center;
+    margin: 0px;
+}
+
+
+//recent
+
+#pc_recent{
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 550px){
+  #pc_recent{
+      display:none;
+  }
+}
+
+#sp_recent{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 550px){
+    #sp_recent{
+        display:none;
+    }
+}
+
+.recent_pic1{
+    width:32%;
+    display:inline-block;
+}
+
+@media (max-width: 550px){
+    .recent_pic1{
+        width:45%;
+        display:inline-block;
+        padding: 10px;
+    }
+}
+
+
+
+//productspage
+
+.proname{
+    @include fontsize(18);
+    display: inline-block;
+    padding: 20px;
+    margin: 0px;
+}
+
+
+.pronumb{
+    display: inline-block;
+    float: right;
+    padding: 20px;
+    margin: 0px;
+}
+
+//ただのボーダー
+
+.proborder{
+    border: solid;
+    border-width: 1px;
+    color:#e2ddd4;
+    margin: 10px;
+}
+
+
+//javaをかけている部分
+
+#display_img img {
+  width: 60%;
+}
+
+@media (max-width: 550px){
+        #display_img img {
+              width: 100%;
+}
+}
+
+.promenu {
+  list-style: none;
+  display:inline-block;
+}
+.promenu img {
+  width: 103px;
+  cursor: pointer;
+}
+
+
+//color size table
+.cs_table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cs_table th{
+    width: 25%;
+    padding: 6px;
+    text-align: center;
+    vertical-align: top;
+    color: #333;
+    background-color: $gray;
+    border: 1px solid #b9b9b9;
+    color: #887f69;
+    @include fontsize(15);
+}
+
+.cs_table td{
+    padding: 6px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    color: #887f69;
+    @include fontsize(15);
+}
+
+//短いのと長い線の設定
+
+.proborder_half{
+    border: solid;
+    border-width: 1px;
+    width: 50%;
+    color:#e2ddd4;
+    margin: 10px;
+}
+
+.sp_proborder{
+    border: solid;
+    border-width: 1px;
+    color:#e2ddd4;
+    margin: 10px;
+}
+
+
+@media (max-width: 550px){
+    .proborder_half{
+        display:none;
+    }
+}
+
+@media (min-width: 550px){
+    .sp_proborder{
+        display:none;
+    }
+}
+
+
+.pricetag_red{
+    color: #9d1a2d;
+    @include fontsize(20);
+    font-style: italic;
+    display: inline-block;
+}
+.tax{
+    @include fontsize(14);
+    font-style: italic;
+    display: inline-block;
+}
+
+.title_price{
+    width:32%;
+    display: inline-block;
+}
+
+.pricenumb{
+    width:32%;
+    display: inline-block;
+}
+
+
+.pc_addcart{
+    width:32%;
+    display: inline-block;
+}
+
+//スマホ設定
+@media (max-width: 550px){
+        .pc_addcart{
+            display: none;
+        }
+}
+
+.sp_addcart{
+    text-align: center;
+    padding: 20px;
+}
+
+@media (min-width: 550px){
+.sp_addcart{
+    display: none;
+}
+}
+
+
+
+.quantity{
+    width:32%;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.squarebox{
+    border: 1px solid;
+    color:#887f69;
+    width: 150px;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title_explane{
+    @include fontsize(18);
+    color: #887f69;
+    padding-top: 20px;
+}
+
+.exborder{
+    border: solid;
+    border-width: 0.5px;
+    color:#887f69;
+}
+
+
+.title_explane_h3{
+    @include fontsize(16);
+    color:#887f69;
+    margin: 20px;
+}
+
+.title_explane_p{
+    color:#333333;
+    @include fontsize(14);
+}
+
+//もう一つのtable
+
+.cs_table_1{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cs_table_1 th{
+    width: 25%;
+    padding: 6px;
+    text-align: center;
+    vertical-align: top;
+    color: #333;
+    background-color: $gray;
+    border: 1px solid #b9b9b9;
+    color: #887f69;
+    @include fontsize(15);
+}
+
+.cs_table_1 td{
+    padding: 6px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    color: #887f69;
+    @include fontsize(15);
+}
+
+
+a:hover{
+    color: #b0b0b0;
+    
+}
+a:visited{
+    color:#9d1a2d;
+}
