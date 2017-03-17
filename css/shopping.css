@@ -1,6 +1,17 @@
 html {
   font-size: 62.5%; }
 
+body {
+  background-color: #f9f8f6; }
+
+#toplogo {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.pc_menu {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .pc_menu_li {
   list-style: none; }
 
@@ -36,24 +47,29 @@ html {
 @media (min-width: 550px) {
   #sp_new_items {
     display: none; } }
-.items_pic1 {
+#new_itempic_1 {
+  display: flex; }
+
+.itembox {
   width: 32%;
-  display: inline-block; }
+  margin: 5px;
+  background-color: #ffffff; }
+
+.items_pic1 {
+  padding: 10px; }
+
+#new_itempic_2 {
+  display: flex; }
 
 .items_pic2 {
-  width: 32%;
-  display: inline-block; }
+  padding: 10px; }
 
 @media (max-width: 550px) {
   .items_pic1 {
-    width: 45%;
-    display: inline-block;
-    padding: 10px; }
+    width: 45%; }
 
   .items_pic2 {
-    width: 45%;
-    display: inline-block;
-    padding: 10px; } }
+    width: 45%; } }
 #pc_popular_items {
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -69,24 +85,24 @@ html {
 @media (min-width: 550px) {
   #sp_popular_items {
     display: none; } }
+#popular_itempic_1 {
+  display: flex; }
+
 .popular_pic1 {
-  width: 32%;
-  display: inline-block; }
+  padding: 10px; }
+
+#popular_itempic_2 {
+  display: flex; }
 
 .popular_pic2 {
-  width: 32%;
-  display: inline-block; }
+  padding: 10px; }
 
 @media (max-width: 550px) {
   .popular_pic1 {
-    width: 45%;
-    display: inline-block;
-    padding: 10px; }
+    width: 45%; }
 
   .popular_pic2 {
-    width: 45%;
-    display: inline-block;
-    padding: 10px; } }
+    width: 45%; } }
 p {
   font-size: 13px;
   font-size: 1.3rem; }
@@ -113,17 +129,25 @@ p {
   font-size: 2.4rem;
   color: #887f69; }
 
+#guide {
+  display: flex; }
+
 .sent {
-  width: 35%;
-  display: inline-block;
-  margin: 40px; }
+  width: 45%;
+  padding: 30px;
+  margin: 10px;
+  background-color: #ffffff; }
 
 .pay {
-  width: 35%;
-  display: inline-block;
-  margin: 40px; }
+  width: 45%;
+  padding: 30px;
+  margin: 10px;
+  background-color: #ffffff; }
 
 @media (max-width: 550px) {
+  #guide {
+    display: block; }
+
   .sent {
     display: block;
     width: 100%; }
@@ -160,11 +184,20 @@ p {
   height: 45px;
   margin: 10 0 0 0; }
 
+.catego_li {
+  background-color: #ffffff; }
+
 .categoriespic {
   display: inline-block;
   padding: 10px; }
 
 .nextpic {
+  text-align: center;
+  display: inline-block;
+  float: right;
+  padding: 10px; }
+
+.downpic {
   text-align: center;
   display: inline-block;
   float: right;
@@ -186,7 +219,10 @@ p {
   float: right; }
 
 #about {
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff; }
 
 #about_bar {
   background-color: #887f69;
@@ -209,10 +245,17 @@ p {
   text-align: center; }
 
 @media (max-width: 550px) {
+  #about {
+    clear: fix; }
+
   .aboutpic {
+    width: 40%;
     float: left; } }
 #shopinfo {
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff; }
 
 #shopinfo_bar {
   background-color: #887f69;
@@ -232,6 +275,9 @@ p {
   margin: 10px; }
 
 @media (max-width: 550px) {
+  #shopinfo {
+    clear: both; }
+
   .shoppic {
     float: left; } }
 @media (min-width: 550px) {
@@ -258,6 +304,9 @@ p {
   background-color: #b0b0b0;
   padding: 10px; }
 
+@media (max-width: 550px) {
+  #top_bar {
+    width: 100%; } }
 .homeicon {
   display: inline-block; }
 
@@ -268,15 +317,32 @@ p {
 #top_bar_pic {
   padding: 5px; }
 
-.items_pic3 {
+@media (max-width: 550px) {
+  #top_bar_pic {
+    width: 100%; }
+
+  .topbarpic {
+    width: 100%; } }
+#list_pics_1 {
+  display: flex; }
+
+#list_pics_2 {
+  display: flex; }
+
+#list_pics_3 {
+  display: flex; }
+
+.itembox {
   width: 32%;
-  display: inline-block; }
+  margin: 5px;
+  background-color: #ffffff; }
+
+.items_pic3 {
+  padding: 10px; }
 
 @media (max-width: 550px) {
   .items_pic3 {
-    width: 45%;
-    display: inline-block;
-    padding: 10px; } }
+    width: 45%; } }
 #nb_bar {
   padding-top: 20px; }
 
@@ -319,14 +385,20 @@ p {
 @media (min-width: 550px) {
   #sp_recent {
     display: none; } }
+#recent_pics {
+  display: flex; }
+
 .recent_pic1 {
+  padding: 10px; }
+
+.itembox {
   width: 32%;
-  display: inline-block; }
+  margin: 5px;
+  background-color: #ffffff; }
 
 @media (max-width: 550px) {
   .recent_pic1 {
     width: 45%;
-    display: inline-block;
     padding: 10px; } }
 .proname {
   font-size: 18px;

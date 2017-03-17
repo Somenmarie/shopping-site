@@ -11,10 +11,25 @@ html {
 
 $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 $gray : #f9f8f6;
+$white : #ffffff;
 
-
+body{
+    background-color: $gray;
+}
 
 //headerin
+
+#toplogo{
+    margin-top: 20px;
+    margin-bottom : 20px;
+}
+
+.pc_menu{
+     margin-top: 20px;
+      margin-bottom : 20px;
+}
+
+
 
 .pc_menu_li{
     list-style:none;
@@ -55,6 +70,8 @@ $gray : #f9f8f6;
 
 //newitems
 
+
+
 #pc_new_items{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -79,28 +96,47 @@ $gray : #f9f8f6;
     }
 }
 
-.items_pic1{
+
+//画像の部分
+
+#new_itempic_1{
+display:flex;
+}
+
+
+.itembox{
     width:32%;
-    display:inline-block;
+    margin: 5px;
+    background-color: $white;
+}
+
+
+.items_pic1{
+  padding: 10px;
+}
+
+#new_itempic_2{
+display:flex;
 }
 
 .items_pic2{
-    width:32%;
-    display:inline-block;
+        padding: 10px;
 }
+
 
 @media (max-width: 550px){
     .items_pic1{
         width:45%;
-        display:inline-block;
-        padding: 10px;
+
+
     }
     .items_pic2{
         width:45%;
-        display:inline-block;
-        padding: 10px;
+
     }
 }
+
+
 
 
 //popilaritems
@@ -129,26 +165,32 @@ $gray : #f9f8f6;
 }
 
 
-.popular_pic1{
-    width:32%;
-    display:inline-block;
+#popular_itempic_1{
+    display:flex;
 }
 
+.popular_pic1{
+       padding: 10px;
+}
+
+
+#popular_itempic_2{
+    display:flex;
+}
+
+
 .popular_pic2{
-    width:32%;
-    display:inline-block;
+      padding: 10px;
 }
 
 @media (max-width: 550px){
     .popular_pic1{
         width:45%;
-        display:inline-block;
-        padding: 10px;
+
     }
     .popular_pic2{
         width:45%;
-        display:inline-block;
-        padding: 10px;
+
     }
 }
 
@@ -195,20 +237,32 @@ $gray : #f9f8f6;
     color:#887f69;
 }      
       
+
+#guide{
+    display:flex;
+}
       
+     
 .sent{
-    width: 35%;
-    display: inline-block;
-    margin: 40px;
+    width: 45%;
+    padding: 30px;
+    margin: 10px;
+    background-color:$white;
 }      
 
 .pay{
-    width: 35%;
-    display: inline-block;
-    margin: 40px;
+    width: 45%;
+    padding: 30px;
+    margin: 10px;
+    background-color:$white;
 }   
       
 @media (max-width: 550px){
+    
+    #guide{
+        display:block;
+    }
+    
     .sent{
         display:block;
         width: 100%;
@@ -262,7 +316,7 @@ $gray : #f9f8f6;
 }
       
 .catego_li{
-
+ background-color:$white;
 }
       
 .categoriespic{
@@ -275,7 +329,15 @@ $gray : #f9f8f6;
     display:inline-block;
     float:right;
     padding: 10px;
-}            
+}
+
+.downpic{
+    text-align: center;
+    display:inline-block;
+    float:right;
+    padding: 10px;
+}
+
       
 .catebox{
     list-style:none;
@@ -298,6 +360,9 @@ $gray : #f9f8f6;
 
 #about{
   margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color:$white;
 }
 
 #about_bar {
@@ -326,9 +391,15 @@ $gray : #f9f8f6;
       
 @media (max-width: 550px){
     
+    #about{
+        clear:fix;
+    }
+    
     .aboutpic{
+        width: 40%;
         float:left;
     }
+
 }      
       
       
@@ -336,6 +407,9 @@ $gray : #f9f8f6;
       
 #shopinfo{
      margin-top: 10px;
+     margin-bottom: 10px;
+     padding: 10px;
+     background-color:$white;
 }
 
 #shopinfo_bar {
@@ -360,8 +434,12 @@ $gray : #f9f8f6;
 
 @media (max-width: 550px){
 
+     #shopinfo{
+         clear:both;
+     }
+     
     .shoppic{
-        float:left;
+        float:left; 
     }
 }   
 
@@ -407,6 +485,14 @@ $gray : #f9f8f6;
   background-color: #b0b0b0;
   padding: 10px;
 }
+
+@media (max-width: 550px){
+    #top_bar{
+        width: 100%;
+    }
+}
+
+
 .homeicon{
      display: inline-block;
 }
@@ -419,18 +505,47 @@ $gray : #f9f8f6;
     padding: 5px;
 }
 
+@media (max-width: 550px){
+#top_bar_pic{
+    width: 100%;
+}
+.topbarpic{
+    width: 100%;
+}
+}
+
+
 //itemlistpic
 
-.items_pic3{
+#list_pics_1{
+    display:flex;
+}
+
+
+
+#list_pics_2{
+    display:flex;
+}
+
+
+#list_pics_3{
+    display:flex;
+}
+
+
+.itembox{
     width:32%;
-    display:inline-block;
+    margin: 5px;
+    background-color: $white;
+}
+
+.items_pic3{
+   padding: 10px;
 }
 
 @media (max-width: 550px){
     .items_pic3{
         width:45%;
-        display:inline-block;
-        padding: 10px;
     }
 }
 
@@ -495,15 +610,28 @@ $gray : #f9f8f6;
     }
 }
 
-.recent_pic1{
-    width:32%;
-    display:inline-block;
+
+#recent_pics{
+    display:flex;
 }
+
+.recent_pic1{
+    padding: 10px;
+}
+
+
+.itembox{
+    width:32%;
+    margin: 5px;
+    background-color: $white;
+}
+
+
+
 
 @media (max-width: 550px){
     .recent_pic1{
         width:45%;
-        display:inline-block;
         padding: 10px;
     }
 }
