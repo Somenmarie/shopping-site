@@ -27,7 +27,7 @@ body{
 }
 
 .pc_menu{
-     margin-top: 20px;
+     margin-top: 50px;
       margin-bottom : 20px;
 }
 
@@ -39,7 +39,7 @@ body{
 
 .menubar{
     display:inline-block;
-    padding-left: 15px;
+    padding-left: 19px;
 }
 
 //スマホ設定
@@ -75,6 +75,7 @@ body{
 
 
 #pc_new_items{
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -157,6 +158,7 @@ flex-wrap:wrap;
 //popilaritems
 
 #pc_popular_items{
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -256,7 +258,7 @@ flex-wrap:wrap;
 }      
       
 .guidetitle{
-    @include fontsize(24);
+    @include fontsize(18);
     color:#887f69;
 }      
       
@@ -280,10 +282,18 @@ flex-wrap:wrap;
     background-color:$white;
 }   
       
+      
+.write{
+    list-style: none;
+    padding-bottom: 10px;
+}
+      
+      
 @media (max-width: 550px){
     
     #guide{
-        display:block;
+        display:flex;
+        flex-wrap:wrap;
     }
     
     .sent{
@@ -300,9 +310,7 @@ flex-wrap:wrap;
 
 #itemserch{
     background-color: $white;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    margin-top: 10px;
+    padding: 15px 15px 5px 15px;
     margin-bottom: 10px;
 }  
 
@@ -310,12 +318,12 @@ flex-wrap:wrap;
 #search #searchInput{
     background-image: url(../images/top/search_icon.png);
     background-repeat: no-repeat;
-    background-position:right;
+    background-position: 95% center;
     background-color: $gray;
-    
+    width: 100%;
 }      
 
-#search{
+form #search{
     text-align:center;
 }
 
@@ -403,7 +411,7 @@ flex-wrap:wrap;
 #about{
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 0px 0px 25px 0px;
   background-color:$white;
 }
 
@@ -450,7 +458,6 @@ flex-wrap:wrap;
 #shopinfo{
      margin-top: 10px;
      margin-bottom: 10px;
-     padding: 10px;
      background-color:$white;
 }
 
@@ -489,10 +496,16 @@ flex-wrap:wrap;
       
 //footer
 
+#footer{
+    text-align: center;
+}
+
+
 @media (min-width: 550px){
 #pagetop{
     display: block;
     text-align:right;
+
 }
 }
 
@@ -508,7 +521,8 @@ flex-wrap:wrap;
     border: solid;
     border-width: 1px;
     color:#808080;
-    margin: 10px;
+    margin: 10px 0px 15px 0px;
+
 }
 
 .navi{
@@ -524,7 +538,7 @@ flex-wrap:wrap;
 // list page
 
 #top_bar{
-  background-color: #b0b0b0;
+  background-color: #d3d3d8;
   padding: 10px;
 }
 
@@ -545,6 +559,7 @@ flex-wrap:wrap;
 
 #top_bar_pic{
     padding: 5px;
+    width: 100%;
 }
 
 @media (max-width: 550px){
@@ -659,9 +674,10 @@ flex-wrap:wrap;
 
 
 .itembox{
-    width:30%;
-    margin: 5px;
+    width: 30%;
+    margin: 2px;
     background-color: $white;
+    padding: 8px;
 }
 
 

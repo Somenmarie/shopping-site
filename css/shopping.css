@@ -9,7 +9,7 @@ body {
   margin-bottom: 20px; }
 
 .pc_menu {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px; }
 
 .pc_menu_li {
@@ -17,7 +17,7 @@ body {
 
 .menubar {
   display: inline-block;
-  padding-left: 15px; }
+  padding-left: 19px; }
 
 @media (max-width: 550px) {
   .pc_menu {
@@ -33,6 +33,7 @@ body {
   .sp_menu {
     display: none; } }
 #pc_new_items {
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px; }
 
@@ -82,6 +83,7 @@ body {
   .items_pic2 {
     padding: 0px; } }
 #pc_popular_items {
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px; }
 
@@ -138,8 +140,8 @@ p {
   color: #887f69; }
 
 .guidetitle {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   color: #887f69; }
 
 #guide {
@@ -157,9 +159,14 @@ p {
   margin: 10px;
   background-color: #ffffff; }
 
+.write {
+  list-style: none;
+  padding-bottom: 10px; }
+
 @media (max-width: 550px) {
   #guide {
-    display: block; }
+    display: flex;
+    flex-wrap: wrap; }
 
   .sent {
     display: block;
@@ -170,18 +177,17 @@ p {
     width: 100%; } }
 #itemserch {
   background-color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  margin-top: 10px;
+  padding: 15px 15px 5px 15px;
   margin-bottom: 10px; }
 
 #search #searchInput {
   background-image: url(../images/top/search_icon.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-color: #f9f8f6; }
+  background-position: 95% center;
+  background-color: #f9f8f6;
+  width: 100%; }
 
-#search {
+form #search {
   text-align: center; }
 
 #searchInput {
@@ -248,7 +254,7 @@ p {
 #about {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 0px 0px 25px 0px;
   background-color: #ffffff; }
 
 #about_bar {
@@ -281,7 +287,6 @@ p {
 #shopinfo {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 10px;
   background-color: #ffffff; }
 
 #shopinfo_bar {
@@ -307,6 +312,9 @@ p {
 
   .shoppic {
     float: left; } }
+#footer {
+  text-align: center; }
+
 @media (min-width: 550px) {
   #pagetop {
     display: block;
@@ -319,7 +327,7 @@ p {
   border: solid;
   border-width: 1px;
   color: #808080;
-  margin: 10px; }
+  margin: 10px 0px 15px 0px; }
 
 .navi {
   text-align: center; }
@@ -328,7 +336,7 @@ p {
   text-align: center; }
 
 #top_bar {
-  background-color: #b0b0b0;
+  background-color: #d3d3d8;
   padding: 10px; }
 
 @media (max-width: 550px) {
@@ -342,7 +350,8 @@ p {
   display: inline; }
 
 #top_bar_pic {
-  padding: 5px; }
+  padding: 5px;
+  width: 100%; }
 
 @media (max-width: 550px) {
   #top_bar_pic {
@@ -418,8 +427,9 @@ p {
 
 .itembox {
   width: 30%;
-  margin: 5px;
-  background-color: #ffffff; }
+  margin: 2px;
+  background-color: #ffffff;
+  padding: 8px; }
 
 @media (max-width: 550px) {
   #recent_pics {
