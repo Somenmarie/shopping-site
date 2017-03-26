@@ -5,6 +5,16 @@ $(document).ready(function(){
 });
 
 
+
+$(document).ready(function(){
+  $(".sp_menu_menuicon").click(function(){
+    $(".sp_menu_toggle").slideToggle();
+  });
+});
+
+
+
+
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel(
         {

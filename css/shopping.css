@@ -29,8 +29,24 @@ body {
   list-style: none;
   text-align: center; }
 
+.sp_menu_toggle {
+  display: none; }
+
+.tog_menu {
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  margin: 0px;
+  padding: 10px 0px 10px 0px; }
+
+.tog_menu_pic {
+  margin-left: 20px; }
+
 @media (min-width: 550px) {
   .sp_menu {
+    display: none; }
+
+  .tog_menu {
     display: none; } }
 #pc_new_items {
   width: 100%;

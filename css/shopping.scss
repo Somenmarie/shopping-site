@@ -61,9 +61,31 @@ body{
     text-align: center;
 }
 
+
+.sp_menu_toggle{
+    display: none;
+}
+
+.tog_menu{
+    list-style: none;
+    background-color: $white;
+    border: 1px solid #eee;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+
+.tog_menu_pic{
+    margin-left: 20px;
+}
+
 //pcの時スマホ非表示
 @media (min-width: 550px){
     .sp_menu{
+        display: none;
+    }
+    
+    .tog_menu{
         display: none;
     }
 }
