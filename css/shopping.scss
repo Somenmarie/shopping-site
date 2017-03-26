@@ -458,6 +458,7 @@ form #search{
 #shopinfo{
      margin-top: 10px;
      margin-bottom: 10px;
+     padding: 0px 0px 25px 0px;
      background-color:$white;
 }
 
@@ -538,7 +539,7 @@ form #search{
 // list page
 
 #top_bar{
-  background-color: #d3d3d8;
+  background-color: #e8e5d9;
   padding: 10px;
 }
 
@@ -691,7 +692,7 @@ form #search{
 
 @media (max-width: 550px){
     .itembox{
-        width: 45%;
+        width: 42%;
     }
 }
 
@@ -858,9 +859,14 @@ form #search{
 
 
 .pc_addcart{
-    width:32%;
+    width: 32%;
     display: inline-block;
 }
+
+.pc_addcart_pic{
+    max-width: 100%;
+}
+
 
 //スマホ設定
 @media (max-width: 550px){

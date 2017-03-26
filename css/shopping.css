@@ -287,6 +287,7 @@ form #search {
 #shopinfo {
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 0px 0px 25px 0px;
   background-color: #ffffff; }
 
 #shopinfo_bar {
@@ -336,7 +337,7 @@ form #search {
   text-align: center; }
 
 #top_bar {
-  background-color: #d3d3d8;
+  background-color: #e8e5d9;
   padding: 10px; }
 
 @media (max-width: 550px) {
@@ -437,7 +438,7 @@ form #search {
     flex-wrap: wrap; } }
 @media (max-width: 550px) {
   .itembox {
-    width: 45%; } }
+    width: 42%; } }
 @media (max-width: 550px) {
   .recent_pic1 {
     padding: 0px; } }
@@ -551,6 +552,9 @@ form #search {
 .pc_addcart {
   width: 32%;
   display: inline-block; }
+
+.pc_addcart_pic {
+  max-width: 100%; }
 
 @media (max-width: 550px) {
   .pc_addcart {
