@@ -62,6 +62,7 @@ body{
 }
 
 
+//スマホ版メニュー
 .sp_menu_toggle{
     display: none;
 }
@@ -74,10 +75,30 @@ body{
     padding: 10px 0px 10px 0px;
 }
 
+//スマホ版アイコン設定
+.sp_menu_fbicon{
+    width: 80%;
+}
+
+.sp_menu_insticon{
+    width: 80%;
+}
+
+.sp_menu_menuicon{
+    width: 80%;
+}
+
+.menubar_sp{
+    display:inline-block;
+    padding-left: 5px;
+}
+
+//スマホ版トグル後文字設定
 
 .tog_menu_pic{
     margin-left: 20px;
 }
+
 
 //pcの時スマホ非表示
 @media (min-width: 550px){
@@ -111,8 +132,11 @@ body{
 
 #sp_new_items{
     text-align:center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
+}
+
+.sp_newitem_pic{
+    width: 45%;
 }
 
 @media (min-width: 550px){
@@ -127,6 +151,7 @@ body{
 #new_itempic_1{
 display:flex;
 flex-wrap:wrap;
+justify-content:space-between;
 }
 
 
@@ -150,6 +175,8 @@ flex-wrap:wrap;
     #new_itempic_1{
 display:flex;
 flex-wrap:wrap;
+box-sizing: border-box;
+justify-content:space-between;
 }
 
 
@@ -197,6 +224,10 @@ flex-wrap:wrap;
     padding-bottom: 20px;
 }
 
+.sp_popular_pic{
+    width: 45%;
+}
+
 @media (min-width: 550px){
     #sp_popular_items{
         display:none;
@@ -207,6 +238,7 @@ flex-wrap:wrap;
 #popular_itempic_1{
     display:flex;
     flex-wrap:wrap;
+    justify-content:space-between;
 }
 
 @media (max-width: 550px){
@@ -214,6 +246,7 @@ flex-wrap:wrap;
     #popular_itempic_1{
 display:flex;
 flex-wrap:wrap;
+justify-content:space-between;
 }
 }
 
@@ -266,6 +299,10 @@ flex-wrap:wrap;
     padding-top: 20px;
 }
 
+.sp_spguide_pic{
+    width: 45%;
+}
+
 @media (min-width: 550px){
     #sp_shopping_guide{
         display:none;
@@ -293,7 +330,7 @@ flex-wrap:wrap;
 .sent{
     width: 45%;
     padding: 30px;
-    margin: 10px;
+    margin: 10px 5px 10px 0px;
     background-color:$white;
 }      
 
@@ -321,10 +358,12 @@ flex-wrap:wrap;
     .sent{
         display:block;
         width: 100%;
+        margin: 5px 0px 5px 0px;
     }
      .pay{
          display:block;
          width: 100%;
+         margin: 5px 0px 5px 0px;
      } 
 }      
       
@@ -353,6 +392,20 @@ form #search{
     width: 80%;
     margin: 0px;
 }
+
+
+@media (max-width: 550px){
+    
+#itemserch{
+    padding: 25px 15px 5px 15px;
+    margin: 5px 0px 5px 0px;
+}
+    
+.searchpic{
+    display: none;
+}
+}
+
 
 //ページリンク
       
@@ -563,11 +616,12 @@ form #search{
 #top_bar{
   background-color: #e8e5d9;
   padding: 10px;
+
 }
 
 @media (max-width: 550px){
     #top_bar{
-        width: 100%;
+     width: 100%;
     }
 }
 
@@ -580,40 +634,63 @@ form #search{
     display: inline;
 }
 
-#top_bar_pic{
-    padding: 5px;
+
+
+#top_bar_pic_pc{
+    padding: 5px 0px 5px 0px;
     width: 100%;
 }
+
+.topbarpic_pc{
+    width: 100%;
+}
+
+
+#top_bar_pic_sp{
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+}
+
+.topbarpic_sp{
+    width: 100%;
+}
+
+
 
 @media (max-width: 550px){
-#top_bar_pic{
-    width: 100%;
+#top_bar{
+    padding: 10px;
+    box-sizing: border-box;
 }
-.topbarpic{
-    width: 100%;
+    
+#top_bar_pic_pc{
+    display: none; 
 }
 }
 
+@media (min-width: 550px){
+        #top_bar_pic_sp{
+    display: none; 
+}
+}
 
 //itemlistpic
 
 #list_pics_1{
     display:flex;
     flex-wrap:wrap;
+    justify-content:space-between;
 }
 
 
 @media (max-width: 550px){
+    #list_pics_1{
     display:flex;
     flex-wrap:wrap;
-
+    justify-content:space-between;
+}
 }
 
-.itembox{
-    width:32%;
-    margin: 5px;
-    background-color: $white;
-}
 
 .items_pic3{
    padding: 10px;
@@ -629,6 +706,7 @@ form #search{
 //nextback_bar
 
 #nb_bar{
+    width: 100%;
     padding-top: 20px;
 }
 
@@ -651,6 +729,7 @@ form #search{
     display:inline-block;
     padding: 10px;
     float: right;
+    margin-right: 10px; 
 }
 
 .back_bar_p{
@@ -680,6 +759,10 @@ form #search{
     padding-bottom: 10px;
 }
 
+.sp_recent_pic{
+    width: 40%;
+}
+
 @media (min-width: 550px){
     #sp_recent{
         display:none;
@@ -689,6 +772,7 @@ form #search{
 
 #recent_pics{
     display:flex;
+    justify-content:space-between;
 }
 
 .recent_pic1{
@@ -698,9 +782,10 @@ form #search{
 
 .itembox{
     width: 30%;
-    margin: 2px;
     background-color: $white;
-    padding: 8px;
+    padding: 6px;
+    margin: 2px 5px 2px 5px;
+
 }
 
 
@@ -708,13 +793,16 @@ form #search{
 #recent_pics{
     display:flex;
     flex-wrap:wrap;
+    justify-content:space-between;
 }
 
 }
 
 @media (max-width: 550px){
     .itembox{
-        width: 42%;
+        width: 40%;
+        padding: 11px 13px 11px 11px;
+        margin: 2px;
     }
 }
 
@@ -738,6 +826,12 @@ form #search{
     padding: 10px;
 }
 
+@media (max-width: 550px){
+         #products{
+             width: 100%;
+             padding: 0px;
+         }
+}
 
 .proname{
     @include fontsize(18);
@@ -796,6 +890,19 @@ form #search{
   cursor: pointer;
   width:80%;
 
+}
+
+
+@media (max-width: 550px){
+    #list_img{
+    width: 100%;
+    justify-content:space-between;
+    }
+    
+    .promenu{
+        list-style: none;
+        width: 18%;
+    }
 }
 
 
